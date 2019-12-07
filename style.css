@@ -1,0 +1,215 @@
+body {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.header--wrapper {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+}
+
+.header {
+    position: fixed;
+    height: 100vh;
+    width: calc(100% - 20px);
+    background: linear-gradient(-135deg, #cce490, #4680d8);
+    border: 10px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__siteName {
+    font-family: 'Leckerli One', cursive;
+    font-size: 4rem;
+    color: white;
+}
+
+.header__subTitle {
+    font-family: 'Comfortaa', cursive;
+    color: whitesmoke;
+    font-size: 2.6rem;
+    padding-bottom: 250px;
+}
+
+.main--wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 50px 50px 0 0;
+    padding-top: 140px;
+    padding-bottom: 1000px;
+}
+
+.main__logo img {
+    width: 230px;
+    border: 10px solid whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: -130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.main__basicInformation {
+    font-family: 'Comfortaa', cursive;
+    padding-bottom: 30px;
+}
+
+.basicInformation__name {
+    width: 200px;
+    color: #666;
+    font-size: 2.5rem;
+    margin: 0 0 0px;
+}
+
+.basicInformation__description {
+    background: transparent;
+    margin-top: 10px;
+    padding: 4px 0 1px 4px;
+    border-left: solid 5px #7db4e6;
+}
+
+.work__imageView img {
+    width: 20px;
+}
+
+.main__works {
+    width: 100%;
+    background-color: #34568e;
+}
+
+.main__header {
+    font-weight: bold;
+    color: #FFF;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.work {
+    padding: 20px;
+}
+
+.work__chronology {
+    border-left: solid 3px rgba(255,255,255,0.5);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.oneYear__viewYear {
+    position: relative;
+}
+
+.oneYear__viewYear::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 25px / 2);
+    left: calc(-25px / 2 - 1.5px);
+    width: 25px;
+    height: 25px;
+    background-color: #EEE;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.oneYear__yearText {
+    font-family: 'Racing Sans One', cursive;
+    width: 100%;
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.oneYear__yearText::before {
+    content: '';
+    position: absolute;
+    left:0;
+    top: 50%;
+    display: inline-block;
+    width: calc(50% - 55px);
+    border-top: dashed 3px rgba(255,255,255,0.5);
+}
+
+.oneYear__objectList {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.oneYear__viewObject {
+    position: relative;
+    color: #EEE;
+    padding-bottom: 60px;
+    padding-left: 18px;
+}
+
+.oneYear__viewObject:last-child {
+    padding-bottom: 0px;
+}
+
+.oneYear__viewObject--singleLine {
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.oneYear__viewObject::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -40px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+.oneYear__viewObject:nth-child(1)::before {
+    display: none;
+}
+
+.oneYear__viewObject--singleLine::before {
+    top: -30px;
+}
+
+.oneYear__objectHeader {
+
+}
+
+.oneYear__companyName {
+    margin: 0;
+    padding-bottom: 3px;
+    font-size: 1.2rem;
+}
+
+.oneYear__objectName {
+    color: #FFF;
+    margin: 0;
+}
+
+.oneYear__objectDetail {
+    font-size: 1.2rem;
+    padding-top: 7px;
+}
+
+.oneYear__objectDetail--born {
+    text-align: center;
+    font-style: italic;
+}
