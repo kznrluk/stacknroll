@@ -51,7 +51,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     background-color: whitesmoke;
     padding-top: 120px;
 }
@@ -91,7 +90,7 @@ body {
     width: 200px;
     color: #666;
     font-size: 2.5rem;
-    margin: 0 0 0px;
+    margin: 0;
 }
 
 .basicInformation__description {
@@ -207,7 +206,7 @@ body {
     position: absolute;
     content: '';
     left:0;
-    top: 0%;
+    top: 0;
     width: 100%;
     height: 100%;
     background-color: #34568e;
@@ -271,7 +270,7 @@ body {
 }
 
 .oneYear__viewObject:last-child {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .oneYear__viewObject--singleLine {
@@ -490,7 +489,7 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1230px) {
     .main__profile::before {
         height: 300%;
     }
