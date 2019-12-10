@@ -1,3 +1,17 @@
+:root {
+    --main-bg-color-white: #f5f5f5;
+    --main-bg-color-blue: #34568e;
+
+    --header-text-color-blue: var(--main-bg-color-blue);
+    --header-text-color-white: var(--main-bg-color-white);
+
+    --highlight-text-color-white: #FFFFFF;
+    --normal-text-color: #666666;
+
+    --accesent-deep-blue: #1f4167;
+    --accesent-light-blue: #7db4e6;
+}
+
 body {
     font-size: 20px;
     padding: 0;
@@ -15,23 +29,22 @@ body {
     height: 100vh;
     width: calc(100% - 20px);
     background: linear-gradient(-135deg, #cce490, #4680d8);
-    border: 10px solid whitesmoke;
+    border: 10px solid var(--main-bg-color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: -2;
 }
 
 .header__siteName {
     font-family: 'Leckerli One', cursive;
     font-size: 4rem;
-    color: white;
+    color: var(--highlight-text-color-white);
 }
 
 .header__subTitle {
     font-family: 'Comfortaa', cursive;
-    color: whitesmoke;
+    color: var(--header-text-color-white);
     font-size: 2rem;
     padding-bottom: 250px;
 }
@@ -42,7 +55,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: -2;
+    z-index: 1;
 }
 
 .main {
@@ -51,18 +64,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: var(--main-bg-color-white);
     padding-top: 120px;
+    z-index: 1;
 }
 
+/* SCSSを導入したら共通化すること(以下のskewYすべて) */
 .main::before {
     position: absolute;
     content: '';
-    left:0;
+    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: var(--main-bg-color-white);
     transform: skewY(-4deg);
     z-index: -1;
     transform-origin: bottom left;
@@ -70,7 +85,7 @@ body {
 
 .main__logo img {
     width: 230px;
-    border: 10px solid whitesmoke;
+    border: 10px solid var(--main-bg-color-white);
     border-radius: 50%;
     position: absolute;
     top: -150px;
@@ -80,46 +95,52 @@ body {
     z-index: 2;
 }
 
-.main__basicInformation {
-    font-family: 'Comfortaa', cursive;
-    padding-bottom: 20px;
-    z-index: 2;
-}
-
-.basicInformation__name {
-    width: 200px;
-    color: #666;
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-.basicInformation__description {
-    background: transparent;
-    margin-top: 10px;
-    padding: 4px 0 1px 4px;
-    border-left: solid 5px #7db4e6;
-}
-
-.main__profile {
+.main__information {
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     z-index: 1;
 }
 
-.main__profile::before {
+.main__information::before {
     position: absolute;
     content: '';
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 150%;
-    background-color: whitesmoke;
+    height: 100%;
+    background-color: var(--main-bg-color-white);
     transform: skewY(4deg);
     transform-origin: bottom left;
     z-index: -1;
+}
+
+.information__basic {
+    font-family: 'Comfortaa', cursive;
+    padding-bottom: 20px;
+}
+
+.basic__name {
+    width: 200px;
+    color: var(--normal-text-color);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.basic__description {
+    background: transparent;
+    margin-top: 10px;
+    padding: 4px 0 1px 7px;
+    border-left: solid 5px var(--accesent-light-blue);
+}
+
+.information__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .profile__tagCloud {
@@ -133,7 +154,7 @@ body {
     display: inline;
     padding: 0 5px;
     line-height: 1.8rem;
-    color: #666;
+    color: var(--normal-text-color);
 }
 
 .profile__tagCloud li:before {
@@ -154,14 +175,13 @@ body {
 .main__works {
     padding-top: 80px;
     width: 100%;
-    background-color: #34568e;
+    background-color: var(--main-bg-color-blue);
 }
 
 .main__header {
     width: 100%;
     position: relative;
     font-weight: bold;
-    color: #FFF;
     font-size: 1.5rem;
     text-align: center;
     padding: 20px 0 20px;
@@ -169,11 +189,11 @@ body {
 }
 
 .main__header--blue {
-    color: #34568e
+    color: var(--main-bg-color-blue);
 }
 
 .main__header--white {
-    color: #EEEEEE;
+    color: var(--main-bg-color-white);
 }
 
 .main__header::before {
@@ -188,10 +208,10 @@ body {
 }
 
 .main__header--blue::before {
-    background-color: #34568e
+    background-color: var(--main-bg-color-blue);
 }
 .main__header--white::before {
-    background-color: #EEEEEE;
+    background-color: var(--main-bg-color-white);
 }
 
 .work {
@@ -209,14 +229,14 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #34568e;
+    background-color: var(--main-bg-color-blue);
     transform: skewY(4deg);
     transform-origin: bottom left;
     z-index: -1;
 }
 
 .work__chronology {
-    border-left: solid 3px rgba(255,255,255,0.5);
+    border-left: solid 3px rgba(255,255,255,0.7);
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -228,11 +248,12 @@ body {
 .oneYear__viewYear::before {
     content: '';
     position: absolute;
-    top: calc(50% - 25px / 2);
-    left: calc(-25px / 2 - 1.5px);
+    top: 10px;
+    left: -17px;
     width: 25px;
     height: 25px;
-    background-color: #EEE;
+    background-color: var(--main-bg-color-blue);
+    border: solid 3px var(--main-bg-color-white);
     border-radius: 50%;
     z-index: 1;
 }
@@ -241,7 +262,7 @@ body {
     font-family: 'Racing Sans One', cursive;
     width: 100%;
     position: relative;
-    color: #FFF;
+    color: var(--highlight-text-color-white);
     text-align: center;
     font-size: 2.5rem;
     margin: 10px 0;
@@ -254,7 +275,7 @@ body {
     top: 50%;
     display: inline-block;
     width: calc(50% - 55px);
-    border-top: dashed 3px rgba(255,255,255,0.5);
+    border-top: dashed 3px rgba(255,255,255,0.7);
 }
 
 .oneYear__objectList {
@@ -264,7 +285,7 @@ body {
 
 .oneYear__viewObject {
     position: relative;
-    color: #EEE;
+    color: var(--header-text-color-white);
     padding-bottom: 60px;
     padding-left: 18px;
 }
@@ -275,6 +296,7 @@ body {
 
 .oneYear__viewObject--singleLine {
     padding-bottom: 45px;
+    padding-left: 0;
     text-align: center;
 }
 
@@ -310,7 +332,7 @@ body {
 }
 
 .oneYear__objectName {
-    color: #FFF;
+    color: var(--highlight-text-color-white);
     margin: 0;
 }
 
@@ -329,7 +351,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #EEE;
+    background-color: var(--main-bg-color-white);
     padding-top: 80px;
 }
 
@@ -338,14 +360,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
 }
 
 .pickUp {
     background-color: #FFFFFF;
     width: 350px;
+    height: 560px;
     padding-bottom: 25px;
     margin-bottom: 25px;
-    z-index: 3;
 }
 
 .pickUp__eyeCatch {
@@ -361,7 +384,7 @@ body {
 
 .pickUp__name {
     width: 100%;
-    background-color: #1f4167;
+    background-color: var(--accesent-deep-blue);
     margin: 0 0 15px;
     font-size: 1.7rem;
     padding: 10px 0;
@@ -370,7 +393,7 @@ body {
 }
 
 .pickUp__subTitle {
-    color: #34568e;
+    color: var(--accesent-deep-blue);
     text-align: center;
     padding: 0 15px 15px;
 }
@@ -389,6 +412,7 @@ body {
     background: #EEE;
     height: 100vh;
     width: 100%;
+    z-index: 1;
 }
 
 .footer {
@@ -400,8 +424,7 @@ body {
     justify-content: center;
     color: #FFF;
     height: calc(100vh - 130px + 50px);
-    background-color: #34568e;
-    z-index: 1;
+    background-color: var(--main-bg-color-blue);
 }
 
 .footer::before {
@@ -411,9 +434,9 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #34568e;
+    background-color: var(--main-bg-color-blue);
     transform: skewY(-4deg);
-    z-index: -190;
+    z-index: -1;
     transform-origin: bottom left;
 }
 
@@ -457,11 +480,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 130px;
-    background-color: #34568e;
+    background-color: var(--main-bg-color-blue);
 }
 
 .footer__name {
-    color: #FFF;
+    color: var(--highlight-text-color-white);
     font-size: 1.2rem;
     padding: 10px;
 }
@@ -484,7 +507,7 @@ body {
 
 .footer__githubDescription {
     font-size: 0.9rem;
-    color: #FFFFFF;
+    color: var(--highlight-text-color-white);
     margin-top: 5px;
     text-align: center;
 }
