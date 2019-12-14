@@ -13,13 +13,20 @@
 }
 
 body {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN",
+        Meiryo,
+        sans-serif;
     font-size: 20px;
     padding: 0;
     margin: 0;
 }
 
 .header--wrapper {
-    height: 80vh;
+    height: calc(100vh - 238px);
     width: 100%;
     display: flex;
 }
@@ -166,6 +173,14 @@ body {
     padding: 0 20px 10px;
     font-size: 1rem;
     line-height: 1.8rem;
+    text-align: center;
+}
+
+.profile__text p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding: 0 15px 0;
 }
 
 .work__imageView img {
@@ -333,12 +348,18 @@ body {
 
 .oneYear__objectName {
     color: var(--highlight-text-color-white);
+    font-weight: bold;
+    font-size: 1.7rem;
     margin: 0;
 }
 
 .oneYear__objectDetail {
     font-size: 1.2rem;
     padding-top: 7px;
+}
+
+.oneYear__objectLink {
+    color: var(--highlight-text-color-white);
 }
 
 .oneYear__objectDetail--born {
@@ -358,15 +379,17 @@ body {
 .main__pickUps {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     z-index: 2;
 }
 
 .pickUp {
+    position: relative;
     background-color: #FFFFFF;
     width: 350px;
-    height: 560px;
+    height: 585px;
     padding-bottom: 25px;
     margin-bottom: 25px;
 }
@@ -378,8 +401,8 @@ body {
 }
 
 .pickUp__eyeCatch img {
-    object-fit: cover;
-    object-position: 0 20%;
+    width: 100%;
+    height: 200px;
 }
 
 .pickUp__name {
@@ -406,6 +429,41 @@ body {
 
 .pickUp__description p {
     margin: 0;
+}
+
+.pickUp__links {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    color: var(--accesent-deep-blue);
+    text-align: center;
+}
+
+.pickUp__link {
+    position: relative;
+    width: 180px;
+    padding: 7px;
+    border: solid 1px var(--accesent-deep-blue);
+    border-radius: 80px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.pickUp__link:hover {
+    background: var(--accesent-deep-blue);
+    color: var(--main-bg-color-white);
+}
+
+.pickUp__link a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .footer--wrapper {
@@ -440,45 +498,72 @@ body {
     transform-origin: bottom left;
 }
 
+.footer__links {
+    padding-bottom: 20px;
+}
+
+.footer__links:last-child {
+    padding-bottom: 0px;
+}
+
 .footer__publicLinks {
     display: flex;
+    width: 250px;
+    justify-content: space-around;
     flex-direction: column;
+    align-items: center;
     padding-bottom: 35px;
+    padding-top: 25px;
 }
 
 .footer__publicLinksHeader {
+    position: relative;
     font-size: 1.7rem;
     font-weight: lighter;
     text-align: center;
     padding-bottom: 20px;
 }
 
+.footer__publicLinksHeader::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 5px;
+    left: 50%;
+    background-color: var(--highlight-text-color-white);
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+
 .publicLink {
+    position: relative;
     width: 120px;
-    padding: 10px;
-}
-
-.publicLink__description {
+    margin-top: 20px;
+    padding: 7px;
+    border: solid 1px var(--highlight-text-color-white);
+    border-radius: 5px;
     text-align: center;
+    transition: 0.2s;
 }
 
-.footer__privateLinksHeader {
-    padding-bottom: 20px;
+.publicLink:hover {
+    background: var(--main-bg-color-white);
+    color: var(--main-bg-color-blue);
 }
 
-.footer__privateLinks {
-    display: flex;
-    flex-direction: column;
-}
-
-.privateLink {
-    padding: 10px;
-    text-align: center;
+.publicLink a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .footer__viewName {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 130px;
     background-color: var(--main-bg-color-blue);
 }
@@ -489,21 +574,28 @@ body {
     padding: 10px;
 }
 
-.footer__viewName {
-    display: flex;
-    justify-content: space-around;
-}
-
 .footer__github {
+    position: relative;
+    margin-top: 40px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 
 .footer__github img {
-    padding-top: 40px;
     width: 40px;
     height: 40px;
 }
+
+.footer__github a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 .footer__githubDescription {
     font-size: 0.9rem;
@@ -532,6 +624,6 @@ body {
     }
 
     .profile__text {
-        width: 900px;
+        width: 700px;
     }
 }

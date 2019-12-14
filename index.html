@@ -16,7 +16,7 @@
             Stack'n'roll
         </div>
         <div class="header__subTitle">
-            選択のつみかさね
+            PORTFOLIO
         </div>
     </div>
 </header>
@@ -39,7 +39,7 @@
             </div>
             <div class="information__profile">
                 <section class="profile__text">
-                    フロントエンドからサーバサイドまで、Web系技術に特化したプログラマーです。
+                    <p>フロントエンドからサーバサイドまで、Web系技術に特化したプログラマーです。
                 </section>
                 <ul class="profile__tagCloud">
                     <li>TypeScript</li>
@@ -49,6 +49,7 @@
                     <li>PHP</li>
                     <li>SQL</li>
                     <li>Linux</li>
+                    <li>UIUX</li>
                 </ul>
             </div>
         </article>
@@ -66,14 +67,28 @@
                             <div class="oneYear__viewObject">
                                 <div class="oneYear__objectHeader">
                                     <h3 class="oneYear__companyName">
-                                        株式会社サイバーエージェント様
+                                        株式会社Cygames様
                                     </h3>
-                                    <h2 class="oneYear__objectName">
-                                        TechJOB
-                                    </h2>
+                                    <a class="oneYear__objectName" href="https://worldflipper.jp/" target="_blank">
+                                        『ワールドフリッパー』
+                                    </a>
                                 </div>
                                 <div class="oneYear__objectDetail">
-                                    インターンとして一ヶ月間、フロントエンドエンジニアとして開発に携わる。
+                                    開発元の株式会社シテイル様でフリーランスエンジニアとして開発に関わる。
+                                </div>
+                            </div>
+                            <div class="oneYear__viewObject">
+                                <div class="oneYear__objectHeader">
+                                    <h3 class="oneYear__companyName">
+                                        株式会社サイバーエージェント様
+                                    </h3>
+                                    <a class="oneYear__objectName" href="https://www.cyberagent.co.jp/careers/students/event/detail/id=23258" target="_blank">
+                                        CA TechJOB
+                                    </a>
+                                </div>
+                                <div class="oneYear__objectDetail">
+                                    一ヶ月間、インターンとしてCAM - Fensiのフロントエンドとして開発に携わる。<br>
+                                    <a class="oneYear__objectLink" href="https://m0rter.anyfrog.net/2019/107/" target="_blank">レポートブログ</a>
                                 </div>
                             </div>
                         </div>
@@ -96,6 +111,11 @@
                                     台湾にて行われた各国MSPとの交流イベントへの参加。
                                 </div>
                             </div>
+                            <div class="oneYear__viewObject oneYear__viewObject--singleLine">
+                                <div class="oneYear__objectDetail">
+                                    フリーランスとして活動を始める
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="work__oneYear">
@@ -109,11 +129,11 @@
                                         株式会社日本マイクロソフト様
                                     </h3>
                                     <h2 class="oneYear__objectName">
-                                        Microsoft Student Partner
+                                        Microsoft Student Partners
                                     </h2>
                                 </div>
                                 <div class="oneYear__objectDetail">
-                                    Microsoft技術を学生につたえる活動。
+                                    インターンとしてMicrosoft技術を学生につたえる活動を行う。勉強会運営や技術記事執筆など。
                                 </div>
                             </div>
                             <div class="oneYear__viewObject oneYear__viewObject--singleLine">
@@ -148,14 +168,20 @@
                         <img src="./img/hayaoshi.png" alt="hayaoshi">
                     </div>
                     <div class="pickUp__text">
-                        <h2 class="pickUp__name">早押しボタンオンライン</h2>
+                        <h2 class="pickUp__name">Hayaoshi-Button-Online</h2>
                         <div class="pickUp__subTitle">
-                            Webで遊べる早押しクイズ
+                            ブラウザで遊べる早押しボタン
                         </div>
                         <div class="pickUp__description">
-                            <p>ローカル、または通話中の友達と早押しボタンが遊べるアプリです。</p>
-                            <p>Node.js, Expressを利用しAPIを構築、WebSocketを利用し、リアルタイムで通信を行います。</p>
-                            <p>手軽さを意識し、URL共有だけで遊べるように工夫しました。</p>
+                            <p>仲間内で遊べる早押しボタンアプリがなかったため作成しました。</p>
+                            <p>Webブラウザさえあればすぐに遊べる、Webの技術を用いて作成された早押しボタンアプリです。JavaScript + Socket.IO + Expressにより作成しました。</p>
+                            <p>LINEやTwitterなどのSNSでURLを共有し、すぐに仲間と遊べる手軽さがウリです。</p>
+                        </div>
+                    </div>
+                    <div class="pickUp__links">
+                        <div class="pickUp__link">
+                            GitHub
+                            <a href="https://github.com/kznrluk/hayaoshi-button-online" target="_blank"></a>
                         </div>
                     </div>
                 </section>
@@ -169,25 +195,37 @@
                             ブラウザで動くRPG風戦闘画面
                         </div>
                         <div class="pickUp__description">
-                            <p>公開予定の自作ゲームをブラウザで動かすべく、プロトタイピングした作品群の一つです。</p>
-                            <p>"攻撃"ボタンを押すとIMGエレメント上に配置されたCanvasにスプライトを描写します。</p>
+                            <p>公開予定の自作ゲームをブラウザで動かした場合の動作チェックのため、プロトタイピングした作品群の一つです。</p>
+                            <p>"攻撃"ボタンを押すとHTML5 Canvasにスプライトを描写します。</p>
                             <p>滑らかに動作することが確認できたので、現在はReactを使用しさらにリッチに動作するゲーム画面を作成中です。</p>
+                        </div>
+                    </div>
+                    <div class="pickUp__links">
+                        <div class="pickUp__link">
+                            GitHub
+                            <a href="https://github.com/kznrluk/rpg-enemy-view" target="_blank"></a>
                         </div>
                     </div>
                 </section>
                 <section class="pickUp">
                     <div class="pickUp__eyeCatch">
-                        <img src="./img/bystander.png" alt="console">
+                        <img src="./img/portfolio.png" alt="portfolio">
                     </div>
                     <div class="pickUp__text">
-                        <h2 class="pickUp__name">Bystander</h2>
+                        <h2 class="pickUp__name">This Portforlio</h2>
                         <div class="pickUp__subTitle">
-                            静的バトルシミュレータ
+                            オリジナルポートフォリオ
                         </div>
                         <div class="pickUp__description">
-                            <p>公開予定の自作ゲームの内部で使用するバトルシュミレータです。</p>
-                            <p>ゲーム内のスキル発動などの選択は、開始前のプロファイル選択によりすべて自動で行われます。</p>
-                            <p>イベントとグローバルストアを駆使することで、各クラスを疎結合にするなど、技術的なこだわりもあります。</p>
+                            <p>フロントエンドエンジニアとして必須なHTML/CSS能力の証明のため作成しました。</p>
+                            <p>必要最低限の情報をみやすく伝えることを意識しレイアウト。一方で、青と白の背景を斜めに配置することでダイナミックに魅せることを狙いました。</p>
+                            <p>もちろんレスポンシブに対応。ウィンドウを狭くしてもきれいに表示されます。</p>
+                        </div>
+                    </div>
+                    <div class="pickUp__links">
+                        <div class="pickUp__link">
+                            GitHub
+                            <a href="https://github.com/kznrluk/stacknroll" target="_blank"></a>
                         </div>
                     </div>
                 </section>
@@ -195,43 +233,47 @@
         </article>
         <footer class="footer--wrapper">
             <div class="footer">
-                <header class="footer__publicLinksHeader">
-                    MORE OUTPUTS
-                </header>
-                <div class="footer__publicLinks">
-                    <section class="publicLink">
-                        <div class="publicLink__description">
+                <div class="footer__links">
+                    <header class="footer__publicLinksHeader">
+                        MORE OUTPUTS
+                    </header>
+                    <div class="footer__publicLinks">
+                        <section class="publicLink">
                             GitHub
-                        </div>
-                    </section>
-                    <section class="publicLink">
-                        <div class="publicLink__description">
+                            <a href="https://github.com/kznrluk" ></a>
+                        </section>
+                        <section class="publicLink">
                             Qiita
-                        </div>
-                    </section>
-                    <section class="publicLink">
-                        <div class="publicLink__description">
+                            <a href="https://qiita.com/kznr_luk" target="_blank"></a>
+                        </section>
+                        <section class="publicLink">
                             Blog
-                        </div>
-                    </section>
+                            <a href="https://m0rter.anyfrog.net/" target="_blank"></a>
+                        </section>
+                    </div>
                 </div>
-                <header class="footer__privateLinksHeader">
-                    PRIVATE SNS
-                </header>
-                <div class="footer__privateLinks">
-                    <section class="privateLink">
-                        Twitter
-                    </section>
-                    <section class="privateLink">
-                        FaceBook
-                    </section>
+                <div class="footer__links">
+                    <header class="footer__publicLinksHeader">
+                        PRIVATE SNS
+                    </header>
+                    <div class="footer__publicLinks">
+                        <section class="publicLink">
+                            Twitter
+                            <a href="https://twitter.com/kznr_luk" target="_blank"></a>
+                        </section>
+                        <section class="publicLink">
+                            Facebook
+                            <a href="https://www.facebook.com/SKazunari" target="_blank"></a>
+                        </section>
+                    </div>
                 </div>
             </div>
             <div class="footer__viewName">
                 <div class="footer__github">
                     <img src="./img/GitHub.png" alt="GitHub Logo">
+                    <p class="footer__githubDescription">This Page</p>
+                    <a href="https://github.com/kznrluk/stacknroll" target="_blank"></a>
                 </div>
-                <p class="footer__githubDescription">This Page</p>
             </div>
         </footer>
     </main>
