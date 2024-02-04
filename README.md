@@ -1,18 +1,17 @@
 ![LOGO](https://raw.githubusercontent.com/kznrluk/stacknroll/doc-img/doc-logo.png)
 
-笹 和成(kznrluk)のポートフォリオサイトです。
+ポートフォリオリポジトリをご覧いただきありがとうございます。まだページをご覧になっていない方は下記リンクからアクセスすることができます。
 
-経験の積み重ね(Stack)と行動力(roll)を兼ね備えたい、という思いからStack and roll = Stack'n'rollと名前を付けました。
+[Stack'n'roll - 笹 和成のポートフォリオ](https://stack.anyfrog.net/)
 
-[stack.anyfrog.net](https://stack.anyfrog.net)
 
-### Requirement 
-* ブログでまとめにくいスキルや経歴をわかるようにする。
-* 制作物でピックアップしたいものを解説付きでまとめる。
-* UI・UX / HTML / CSSの実装力を証明する。
+## 笹 和成について
+ささかずなりと読みます。インターネット上では `kznrluk` というIDを主に利用しています。
+1998/04/14生まれの25歳。21年度新卒となります。
 
-### Feature
-* タグクラウド状のスキルセット
-* 会社名・タイトル・解説で分かりやすい経歴表示
-* 画像付き作品ピックアップ表示
-* FlexBoxと@mediaクエリでレスポンシブを実現
+Webフロント: React, Next.js, ECMAScript
+バックエンド: Go, PHP, TypeScript
+インフラ: Linux, Docker, Kubernetes
+クラウド: Google Cloud Platform(GKE, CloudRun, etc), Terraform
+GitOps: GitHub Actions
+生成AI: OpenAI API, Stable Diffusion(DreamBooth, LoRA, InvokeAI), PyTorch
