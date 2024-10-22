@@ -86,11 +86,11 @@ p {
 }
 
 article section {
-    background-color: rgba(250, 253, 255, 0.95);
+    background-color: rgba(250, 253, 255, 0.93);
     padding: 24px;
     border-radius: 8px;
     margin-bottom: 32px;
-    box-shadow: 32px 32px 255px 0 rgba(99, 206, 236, 0.15);
+    box-shadow: 32px 32px 255px 0 rgba(21, 62, 89, 0.1);
 }
 
 article section > header {
