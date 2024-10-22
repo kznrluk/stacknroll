@@ -153,9 +153,17 @@ article section:last-child {
     align-items: baseline;
 }
 
+.with_flex div {
+    margin-left: 8px;
+}
+
 @media(max-width: 700px) {
     .with_flex {
         flex-direction: column;
+    }
+
+    .with_flex div {
+        margin-left: 0;
     }
 }
 
