@@ -3,410 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
-    <meta property="og:title" content="笹 和成のポートフォリオ トップページ" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="笹 和成 @kznrlukのポートフォリオサイトです。" />
-    <meta property="og:url" content="https://stack.anyfrog.net/" />
-    <meta property="og:site_name" content="Stack'n'roll" />
-    <meta property="og:image" content="https://stack.anyfrog.net/img/portfolio.png" />
-    <meta property="og:image:width" content="700" />
-    <meta property="og:image:height" content="400" />
-    <title>Stack'n'roll - 笹 和成のポートフォリオ</title>
+    <meta property="og:title" content="笹 和成 - stack.anyfrog.net"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="笹 和成 @kznrlukのポートフォリオサイトです。"/>
+    <meta property="og:url" content="https://stack.anyfrog.net/"/>
+    <meta property="og:site_name" content="笹 和成 - stack.anyfrog.net"/>
+    <meta property="og:image" content="https://stack.anyfrog.net/img/portfolio.png"/>
+    <meta property="og:image:width" content="700"/>
+    <meta property="og:image:height" content="400"/>
+    <title>笹 和成 - stack.anyfrog.net</title>
 </head>
 <body>
-<header class="header--wrapper">
-    <div class="header">
-        <div class="header__siteName">
-            Stack'n'roll
+<div class="container">
+    <div class="profile">
+        <div class="icon">
+            <img src="https://avatars0.githubusercontent.com/u/29700428" alt="my icon" class="main_image">
         </div>
-        <div class="header__subTitle">
-            PORTFOLIO
+        <div>
+            <p>Sasa Kazunari</p>
+            <p class="name_kanji">笹 和成</p>
         </div>
     </div>
-</header>
-<div class="main--wrapper">
-    <main class="main">
-        <div class="main__logo">
-            <img src="https://avatars0.githubusercontent.com/u/29700428?s=460&v=4" alt="logo">
+    <div class="links">
+        <div>
+            <a href="https://github.com/kznrluk" target="_blank">GitHub</a>
+            <a href="https://ribbit.anyfrog.net/" target="_blank">Blog</a>
+            <a href="https://zenn.dev/kznrluk" target="_blank">Zenn</a>
         </div>
-        <article class="main__information">
-            <div class="information__basic">
-                <h1 class="basic__name">
-                    Sasa
-                </h1>
-                <h1 class="basic__name">
-                    Kazunari
-                </h1>
-                <div class="basic__description">
-                    Web Engineer
+        <div>
+            <a href="https://twitter.com/kznrluk" target="_blank">X</a>
+            <a href="https://concrnt.world/anyfrog.net" target="_blank">Concrnt</a>
+        </div>
+    </div>
+    <article>
+        <section>
+            <header>Jobs</header>
+            <div class="section_item">
+                <header class="with_flex">
+                    <p>株式会社ポケットペア</p>
+                    <div>
+                        <p>SRE</p>
+                        <p>2024/03 - Now</p>
+                    </div>
+                </header>
+                <div>
+                    <p>ゲーム「パルワールド」のインフラ・バックエンド領域を担当。</p>
+                    <p>マルチプレイ用のインフラ構築や運用ツールの整備やUnreal Engineを含む全体の最適化を行う。</p>
                 </div>
             </div>
-            <div class="information__profile">
-                <section class="profile__text">
-                    <p>フロントエンドからインフラまでを得意領域とするエンジニアです。</p>
-                    <p>幅広い技術領域を活用し各職種と連携したソリューションの提案を強みとしています。</p>
-                </section>
-                <ul class="profile__tagCloud">
-                    <li>Go</li>
-                    <li>TypeScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
-                    <li>GCP</li>
-                    <li>SRE</li>
-                    <li>Kubernetes</li>
-                    <li>Linux</li>
-                    <li>GenerativeAI</li>
-                </ul>
+            <div class="section_item">
+                <header class="with_flex">
+                    <p>株式会社サイバーエージェント</p>
+                    <div>
+                        <p>SRE / バックエンドエンジニア</p>
+                        <p>2021/04 - Now</p>
+                    </div>
+                </header>
+                <div>
+                    <p>ソーシャルゲーム開発のバックエンド領域を担当後SREとして業務を開始。</p>
+                    <p>ソーシャルゲームのバックエンドを支えるマルチテナントKubernetesやGoogle Cloudの運用を担当。</p>
+                </div>
             </div>
-        </article>
-        <article class="main__works">
-            <header class="main__header main__header--white">
-                遍歴
-            </header>
-            <section class="work">
-                <div class="work__chronology">
-                    <div class="work__oneYear">
-                        <div class="oneYear__viewYear">
-                            <h1 class="oneYear__yearText">2023</h1>
+            <details>
+                <summary>More</summary>
+                <div class="section_item">
+                    <header class="with_flex">
+                        <p>株式会社AbemaTV</p>
+                        <div>
+                            <p>バックエンド</p>
+                            <p>2021/04</p>
                         </div>
-                        <div class="oneYear__objectList">
-                            <div class="oneYear__viewObject">
-                                <div class="oneYear__objectHeader">
-                                    <h3 class="oneYear__companyName">
-                                        CyberAgent Developers Advent Calendar & CyberAgent Group SRE Advent Calendar
-                                    </h3>
-                                    <a class="oneYear__objectName">
-                                        各種アドベントカレンダー執筆
-                                    </a>
-                                </div>
-                                <div class="oneYear__objectDetail">
-                                    <a class="oneYear__objectLink" href="https://developers.cyberagent.co.jp/blog/archives/44803/">
-                                        『【コード公開】ゲーム開発でどう活かす？ChatGPTをみんなで使える仕組みづくり』
-                                    </a>
-                                    <br>
-                                    <a class="oneYear__objectLink" href="https://zenn.dev/kznrluk/articles/e37777e8e1e40a">
-                                        『賃貸無料ネットを拠点間VPNで攻略！Raspberry Piルーターを作ろう』
-                                    </a>
-                                </div>
-                            </div>
+                    </header>
+                    <div>
+                        <p>株式会社サイバーエージェントの内定者アルバイトとしてAbemaTVのバックエンド領域やデータ管理システムの開発業務を担当。</p>
+                    </div>
+                </div>
+                <div class="section_item">
+                    <header class="with_flex">
+                        <p>株式会社グリフォン</p>
+                        <div>
+                            <p>バックエンド / フロントエンド</p>
+                            <p>2020/08 - 2020/10</p>
+                        </div>
+                    </header>
+                    <div>
+                        <p>株式会社サイバーエージェントの内定者アルバイトとして非公開ゲームの新機能APIの追加や高速化などの業務を担当。</p>
+                    </div>
+                </div>
+                <div class="section_item">
+                    <header class="with_flex">
+                        <p>株式会社CAM</p>
+                        <div>
+                            <p>フロントエンド</p>
+                            <p>2019/08</p>
+                        </div>
+                    </header>
+                    <div>
+                        <p>株式会社サイバーエージェントのインターンとしてプラットフォーム「Fensi」のフロントエンド領域を新規機能の追加やデザインの調節など担当。</p>
+                    </div>
+                </div>
+                <div class="section_item">
+                    <header class="with_flex">
+                        <p>株式会社シテイル</p>
+                        <div>
+                            <p>バックエンド / フロントエンド</p>
+                            <p>2018/05 - 2020/08</p>
+                        </div>
+                    </header>
+                    <div>
+                        <p>ゲーム「ワールドフリッパー」のバックエンド・社内ツールフロントエンドをフリーランスとして担当。</p>
+                    </div>
+                </div>
+                <div class="section_item">
+                    <header class="with_flex">
+                        <p>株式会社日本マイクロソフト</p>
+                        <div>
+                            <p>Microsoft Student Partner</p>
+                            <p>2017</p>
+                        </div>
+                    </header>
+                    <div>
+                        <p>インターンとしてMicrosoft技術を学生につたえる活動を行う。勉強会運営や技術記事執筆などを担当。 </p>
+                    </div>
+                </div>
+            </details>
+        </section>
+        <article>
+            <section>
+                <header>Events & Talks</header>
+                <div class="section_item">
+                    <header>
+                        <p>『<a href="https://cloudonair.withgoogle.com/events/next-tokyo-24?talk=d1-inf-01" target="_blank">同時接続数 185 万人を支えたパルワールドのインフラ最前線</a>』</p>
+                        <div>
+                            <p>Google Cloud Next Tokyo ’24</p>
+                            <p>2024/08</p>
+                        </div>
+                    </header>
+                    <div>
+                        <p>株式会社ポケットペアのSREとして登壇。</p>
+                        <p>
+                            リアルタイムマルチプレイゲームであるパルワールドの公式サーバーをGoogle Kubernetes
+                            Engine上で動作させるためのノウハウについて解説。
+                        </p>
+                        <div class="extarnal_link">
+                            <p>・<a href="https://ascii.jp/elem/000/004/215/4215340/" target="_blank">「あれ、サーバー代で倒産する…？」大ヒットゲーム・パルワールドが語る、安価で堅牢なインフラ構築</a></p>
+                            <p>・<a href="https://www.famitsu.com/article/202408/13740" target="_blank">『パルワールド』ネットワーク担当者がワンオペで180万人以上さばいて対処したサーバー代7000万円の真相。今後はサーバーの最適化を行って、もっと大人数で遊べるようにしたり、クロスプレイも実現したい</a></p>
                         </div>
                     </div>
-                    <div class="work__oneYear">
-                        <div class="oneYear__viewYear">
-                            <h1 class="oneYear__yearText">2022</h1>
+                </div>
+                <div class="section_item">
+                    <header>
+                        <p>『<a href="https://event.cloudnativedays.jp/cndw2024/talks/2423" target="_blank">3人チームでも運用できるパルワールドのクラウドネイティブ技術</a>』</p>
+                        <div>
+                            <p>Cloud Native Days Winter 2024 Keynote</p>
+                            <p>2024/11</p>
                         </div>
-                        <div class="oneYear__objectList">
-                            <div class="oneYear__viewObject oneYear__viewObject--singleLine">
-                                <div class="oneYear__objectDetail">
-                                    SREとして業務を開始
-                                </div>
+                    </header>
+                    <div>
+                        <p>株式会社ポケットペアのSREとして登壇予定。</p>
+                        <p>クラウドやKubernetesの機能を最大限活用しながら、3名の小規模チームで運用するための工夫やメトリクスを用いた効率化について登壇予定。</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>Books</header>
+                <div class="section_item">
+                    <header>
+                        <p>Concrnt in a Can:1GBメモリで始めるConcrntホスティング</p>
+                        <div>
+                            <p>Hello Nostr, Yo Bluesky 3</p>
+                            <p>技術書典 17</p>
+                            <p>2024/11</p>
+                        </div>
+                    </header>
+                    <div>
+                        <p>新しい分散SNSであるConcrntのセルフホスティングについて解説した記事を寄稿。技術書典 17で頒布予定。</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>Posts</header>
+                <div class="section_item">
+                    <header>
+                        <p>『<a href="https://zenn.dev/kznrluk/articles/117729018970af" target="_blank">新しいファイルシステム Bcachefs</a>』 </p>
+                        <div>
+                            <p>Linux</p>
+                            <p>2024/09</p>
+                        </div>
+                    </header>
+                    <div>
+                        <p>LinuxカーネルにマージされたBcachefsのガイドをユーザーガイドやソースコードを確認しながら執筆。</p>
+                    </div>
+                </div>
+                <div class="section_item">
+                    <header>
+                        <p>『<a href="https://developers.cyberagent.co.jp/blog/archives/44803/" target="_blank">【コード公開】ゲーム開発でどう活かす？ChatGPTをみんなで使える仕組みづくり</a>』 </p>
+                        <div>
+                            <p>CyberAgent Developers Advent Calendar</p>
+                            <p>2023/12</p>
+                        </div>
+                    </header>
+                    <div>
+                        <p>ゲーム事業部向けに開発・導入されたSlack用ChatGPTBotの紹介記事。生成過程がリアルタイムで表示されたり、再生成や削除が可能など高機能なBotとそのソースコードの公開。</p>
+                    </div>
+                </div>
+                <div class="section_item">
+                    <header>
+                        <p>『<a href="https://zenn.dev/kznrluk/articles/e37777e8e1e40a" target="_blank">賃貸無料ネットを拠点間VPNで攻略！Raspberry Piルーターを作ろう</a>』</p>
+                        <div>
+                            <p>CyberAgent Group SRE Advent Calendar</p>
+                            <p>2023/12</p>
+                        </div>
+                    </header>
+                    <div>
+                        <p>賃貸の無料インターネットの安全性・利便性の向上を目的にWireGuardを用いた拠点間接続の構築を行う。</p>
+                    </div>
+                </div>
+                <details>
+                    <summary>More</summary>
+                    <div class="section_item">
+                        <header>
+                            <p>『<a href="https://tech.griphone.co.jp/2022/12/05/easy-packet-monitoring-with-laptop/" target="_blank">ノートPCとWiresharkでスマートフォンの通信を覗いてみよう</a>』</p>
+                            <div>
+                                <p>GRIPHONE ENGINEER'S BLOG</p>
+                                <p>2022/12</p>
                             </div>
-                            <div class="oneYear__viewObject">
-                                <div class="oneYear__objectHeader">
-                                    <h3 class="oneYear__companyName">
-                                        GRIPHONE ENGINEER'S BLOG
-                                    </h3>
-                                    <a class="oneYear__objectName">
-                                        アドベントカレンダー執筆
-                                    </a>
-                                </div>
-                                <div class="oneYear__objectDetail">
-                                    <a class="oneYear__objectLink" href="https://tech.griphone.co.jp/2022/12/05/easy-packet-monitoring-with-laptop/">
-                                        『ノートPCとWiresharkでスマートフォンの通信を覗いてみよう』
-                                    </a>
-                                    <br>
-                                    <a class="oneYear__objectLink" href="https://tech.griphone.co.jp/2022/12/10/go-nil-pointer-or-zero-value/">
-                                        『Go “未設定”を表す値をnilにするかゼロ値にするか』
-                                    </a>
-                                </div>
-                            </div>
+                        </header>
+                        <div>
+                            <p>スマートフォンの通信をできる限り手軽に、簡単にWiresharkでキャプチャするための設定と、回線品質が悪い環境を再現するための設定方法を執筆。</p>
                         </div>
                     </div>
-                    <div class="work__oneYear">
-                        <div class="oneYear__viewYear">
-                            <h1 class="oneYear__yearText">2021</h1>
-                        </div>
-                        <div class="oneYear__objectList">
-                            <div class="oneYear__viewObject oneYear__viewObject--singleLine">
-                                <div class="oneYear__objectDetail">
-                                    <a class="oneYear__objectLink" href="https://tech.griphone.co.jp/2021/12/18/fast-docker-compose-buildx-github-actions/">
-                                        『Docker ComposeでBuildxを使いGitHub Actionsの実行時間を半分にする』執筆
-                                    </a>
-                                </div>
+                    <div class="section_item">
+                        <header>
+                            <p>『<a href="https://tech.griphone.co.jp/2022/12/10/go-nil-pointer-or-zero-value/" target="_blank">Go “未設定”を表す値をnilにするかゼロ値にするか</a>』</p>
+                            <div>
+                                <p>GRIPHONE ENGINEER'S BLOG</p>
+                                <p>2022/12</p>
                             </div>
-                            <div class="oneYear__viewObject oneYear__viewObject--singleLine">
-                                <div class="oneYear__objectDetail">
-                                    株式会社サイバーエージェントに新卒入社
-                                </div>
-                            </div>
-                            <div class="oneYear__viewObject">
-                                <div class="oneYear__objectHeader">
-                                    <h3 class="oneYear__companyName">
-                                        株式会社AbemaTV様
-                                    </h3>
-                                    <a class="oneYear__objectName">
-                                        内定者アルバイト業務
-                                    </a>
-                                </div>
-                                <div class="oneYear__objectDetail">
-                                    サーバサイドエンジニアとして開発に関わる。<br>
-                                    データ管理システム等の開発業務を行った。<br>
-                                </div>
-                            </div>
+                        </header>
+                        <div>
+                            <p>Goで未設定の値をどのように表現するか、いくつかの例やOSSライブラリの実装を比較しながら紹介。</p>
                         </div>
                     </div>
-                    <div class="work__oneYear">
-                        <div class="oneYear__viewYear">
-                            <h1 class="oneYear__yearText">2020</h1>
+                </details>
+            </section>
+            <section>
+                <header>OSS Software</header>
+                <div class="section_item">
+                    <header class="with_flex">
+                        <p><a href="https://github.com/kznrluk/aski">aski - ChatGPTクライアント</a></p>
+                        <div>
+                            <p>2023</p>
+                            <p>Go</p>
                         </div>
-                        <div class="oneYear__objectList">
-                            <div class="oneYear__viewObject">
-                                <div class="oneYear__objectHeader">
-                                    <h3 class="oneYear__companyName">
-                                        株式会社グリフォン様
-                                    </h3>
-                                    <a class="oneYear__objectName">
-                                        内定者アルバイト業務
-                                    </a>
-                                </div>
-                                <div class="oneYear__objectDetail">
-                                    サーバサイドエンジニアとして開発に関わる。新機能APIの追加や高速化、技術ブログ執筆などの業務を行った。<br>
-                                    <a class="oneYear__objectLink" href="https://tech.griphone.co.jp/2020/09/17/accelerate-docker-with-mutagen/" target="_blank">『Mutagenを使って開発環境の重たいDockerを3倍高速化する』</a>
-                                </div>
-                            </div>
-                            <div class="oneYear__viewObject oneYear__viewObject--singleLine">
-                                <div class="oneYear__objectDetail">
-                                    株式会社サイバーエージェントに新卒内定
-                                </div>
-                            </div>
-                        </div>
+                    </header>
+                    <div>
+                        <img src="https://stack.anyfrog.net/img/aski.png" alt="Windowsターミナルの中でChatGPTと会話している様子のスクリーンショット">
+                        <p>
+                            ターミナルで利用するChatGPTクライアント。プログラミング時により簡単にChatGPTにアクセスできるよう開発しました。
+                            通常の会話に加え、会話履歴の保存・復元、任意の時点の会話の編集など一通りの機能を備えています。また、GLOBパターンでファイルの内容を添付することも可能です。
+                            Goで書かれており、各種OSで機能します。
+                        </p>
                     </div>
-                    <div class="work__oneYear">
-                        <div class="oneYear__viewYear">
-                            <h1 class="oneYear__yearText">2019</h1>
+                </div>
+                <div class="section_item">
+                    <header class="with_flex">
+                        <p><a href="https://github.com/kznrluk/hayaoshi-button-online">早押しボタンオンライン</a></p>
+                        <div>
+                            <p>2019</p>
+                            <p>JavaScript</p>
+                            <p>Socket.io</p>
                         </div>
-                        <div class="oneYear__objectList">
-                            <div class="oneYear__viewObject">
-                                <div class="oneYear__objectHeader">
-                                    <h3 class="oneYear__companyName">
-                                        株式会社Cygames様
-                                    </h3>
-                                    <a class="oneYear__objectName" href="https://worldflipper.jp/" target="_blank">
-                                        『ワールドフリッパー』
-                                    </a>
-                                </div>
-                                <div class="oneYear__objectDetail">
-                                    開発元の株式会社シテイル様でフリーランスエンジニアとして開発に関わる。
-                                </div>
-                            </div>
-                            <div class="oneYear__viewObject">
-                                <div class="oneYear__objectHeader">
-                                    <h3 class="oneYear__companyName">
-                                        株式会社サイバーエージェント様
-                                    </h3>
-                                    <a class="oneYear__objectName" href="https://www.cyberagent.co.jp/careers/students/event/detail/id=23258" target="_blank">
-                                        CA TechJOB
-                                    </a>
-                                </div>
-                                <div class="oneYear__objectDetail">
-                                    一ヶ月間、インターンとしてCAM - Fensiのフロントエンドとして開発に携わる。新規機能の追加やデザイナサイドとの調整などをフルタイムで行った。<br>
-                                    <a class="oneYear__objectLink" href="https://m0rter.anyfrog.net/2019/107/" target="_blank">レポートブログ</a>
-                                </div>
-                            </div>
-                        </div>
+                    </header>
+                    <div>
+                        <img src="https://stack.anyfrog.net/img/hayaoshi.png" alt="早押しボタンオンラインのスクリーンショット">
+                        <p>
+                            JavaScriptを利用したWebアプリ。2023年現在、毎日平均して1300人のユーザーに11000回叩かれるボタンを提供しています。
+                            シンプルな技術構成が功をなし、運用コストが低く4年以上にわたる長期の運用が実現しました。「早押しボタン」と検索するとトップに表示されたりするなど、多くの人に利用してもらっています。
+                        </p>
                     </div>
-                    <div class="work__oneYear">
-                        <div class="oneYear__viewYear">
-                            <h1 class="oneYear__yearText">2018</h1>
+                </div>
+                <div class="section_item">
+                    <header class="with_flex">
+                        <p><a href="https://note.com/kznrluk/n/n4bb8f321c4b9">NuRef - 参考資料ビューア</a></p>
+                        <div>
+                            <p>2022</p>
+                            <p>JavaScript</p>
+                            <p>Next.js</p>
                         </div>
-                        <div class="oneYear__objectList">
-                            <div class="oneYear__viewObject">
-                                <div class="oneYear__objectHeader">
-                                    <h3 class="oneYear__companyName">
-                                        Microsoft Student Partners
-                                    </h3>
-                                    <h2 class="oneYear__objectName">
-                                        Asia MSP Summit 2018
-                                    </h2>
-                                </div>
-                                <div class="oneYear__objectDetail">
-                                    台湾にて行われた各国MSPとの交流イベントへの参加。
-                                </div>
-                            </div>
-                            <div class="oneYear__viewObject oneYear__viewObject--singleLine">
-                                <div class="oneYear__objectDetail">
-                                    フリーランスとして活動を始める
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work__oneYear">
-                        <div class="oneYear__viewYear">
-                            <h1 class="oneYear__yearText">2017</h1>
-                        </div>
-                        <div class="oneYear__objectList">
-                            <div class="oneYear__viewObject">
-                                <div class="oneYear__objectHeader">
-                                    <h3 class="oneYear__companyName">
-                                        株式会社日本マイクロソフト様
-                                    </h3>
-                                    <h2 class="oneYear__objectName">
-                                        Microsoft Student Partners
-                                    </h2>
-                                </div>
-                                <div class="oneYear__objectDetail">
-                                    インターンとしてMicrosoft技術を学生につたえる活動を行う。勉強会運営や技術記事執筆など。
-                                </div>
-                            </div>
-                            <div class="oneYear__viewObject oneYear__viewObject--singleLine">
-                                <div class="oneYear__objectDetail">
-                                    千葉工業大学 入学
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work__oneYear">
-                        <div class="oneYear__viewYear">
-                            <h1 class="oneYear__yearText">1998</h1>
-                        </div>
-                        <div class="oneYear__objectList">
-                            <div class="oneYear__viewObject">
-                                <div class="oneYear__objectDetail oneYear__objectDetail--born">
-                                    I Was Born in 1998...
-                                </div>
-                            </div>
-                        </div>
+                    </header>
+                    <div>
+                        <img src="https://stack.anyfrog.net/img/nuref.png" alt="ニューレフ 参考資料ビューアのスクリーンショット">
+                        <p>
+                            ブラウザでURLを開くだけで利用できる参考資料ビューア。既存のソフトウェアがインストール必須なこと、操作性に難を感じたことから作成を始めました。
+                            機能はシンプルに抑えながら、できる限り直観的でわかりやすいUI/UXを追及。初めてでも使いやすい工夫をしています。
+                        </p>
                     </div>
                 </div>
             </section>
         </article>
-        <article class="main__pickUp">
-            <header class="main__header main__header--blue">
-                個人制作物 ピックアップ
-            </header>
-            <div class="main__pickUps">
-                <section class="pickUp">
-                    <div class="pickUp__eyeCatch">
-                        <img src="./img/hayaoshi.png" alt="早押しボタンオンラインのトップページのスクリーンショット。">
-                    </div>
-                    <div class="pickUp__text">
-                        <h2 class="pickUp__name">Hayaoshi-Button-Online</h2>
-                        <div class="pickUp__subTitle">
-                            ブラウザで遊べる早押しボタン
-                        </div>
-                        <div class="pickUp__description">
-                            <p>2019年に作成したWebアプリ。2023年現在、毎日平均して1300人のユーザーに11000回叩かれるボタンを提供しています。</p>
-                            <p>シンプルな技術構成が功をなし、運用コストが低く4年以上にわたる長期の運用が実現しました。「早押しボタン」と検索するとトップに表示されたりするなど、多くの人に利用してもらっています。</p>
-                        </div>
-                    </div>
-                    <div class="pickUp__links">
-                        <div class="pickUp__link">
-                            GitHub
-                            <a href="https://github.com/kznrluk/hayaoshi-button-online" target="_blank"></a>
-                        </div>
-                    </div>
-                </section>
-                <section class="pickUp">
-                    <div class="pickUp__eyeCatch">
-                        <img src="./img/nuref.png" alt="Webブラウザで表示されるNuRefのスクリーンショット。猫の写真が二枚表示されている。">
-                    </div>
-                    <div class="pickUp__text">
-                        <h2 class="pickUp__name">NuRef</h2>
-                        <div class="pickUp__subTitle">
-                            クリエイター向け参考資料ビューア
-                        </div>
-                        <div class="pickUp__description">
-                            <p>ブラウザでURLを開くだけで利用できる参考資料ビューア。既存のソフトウェアがインストール必須なこと、操作性に難を感じたことから作成を始めました。</p>
-                            <p>機能はシンプルに抑えながら、できる限り直観的でわかりやすいUI/UXを追及。初めてでも使いやすい工夫をしています。</p>
-                        </div>
-                    </div>
-                    <div class="pickUp__links">
-                        <div class="pickUp__link">
-                            紹介記事
-                            <a href="https://note.com/kznrluk/n/n4bb8f321c4b9" target="_blank"></a>
-                        </div>
-                    </div>
-                </section>
-                <section class="pickUp">
-                    <div class="pickUp__eyeCatch">
-                        <img src="./img/aski.png" alt="Windowsターミナルの中でChatGPTと会話している様子のスクリーンショット。">
-                    </div>
-                    <div class="pickUp__text">
-                        <h2 class="pickUp__name">aski</h2>
-                        <div class="pickUp__subTitle">
-                            ChatGPTクライアント
-                        </div>
-                        <div class="pickUp__description">
-                            <p>ターミナルで利用するChatGPTクライアント。プログラミング時により簡単にChatGPTにアクセスできるよう開発しました。</p>
-                            <p>通常の会話に加え、会話履歴の保存・復元、任意の時点の会話の編集など一通りの機能を備えています。また、GLOBパターンでファイルの内容を添付することも可能です。</p>
-                            <p>Goで書かれており、各種OSで機能します。</p>
-                        </div>
-                    </div>
-                    <div class="pickUp__links">
-                        <div class="pickUp__link">
-                            GitHub
-                            <a href="https://github.com/kznrluk/aski" target="_blank"></a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-        <footer class="footer--wrapper">
-            <div class="footer">
-                <div class="footer__links">
-                    <header class="footer__publicLinksHeader">
-                        CREATE
-                    </header>
-                    <div class="footer__publicLinks">
-                        <section class="publicLink">
-                            GitHub
-                            <a href="https://github.com/kznrluk" ></a>
-                        </section>
-                        <section class="publicLink">
-                            Blog
-                            <a href="https://ribbit.anyfrog.net/" target="_blank"></a>
-                        </section>
-                        <section class="publicLink">
-                            Zenn
-                            <a href="https://zenn.dev/kznrluk" target="_blank"></a>
-                        </section>
-                        <section class="publicLink">
-                            Qiita
-                            <a href="https://qiita.com/kznrluk" target="_blank"></a>
-                        </section>
-                    </div>
-                </div>
-                <div class="footer__links">
-                    <header class="footer__publicLinksHeader">
-                        SNS
-                    </header>
-                    <div class="footer__publicLinks">
-                        <section class="publicLink">
-                            X (Twitter)
-                            <a href="https://twitter.com/kznrluk" target="_blank"></a>
-                        </section>
-                        <section class="publicLink">
-                            Facebook
-                            <a href="https://www.facebook.com/SKazunari" target="_blank"></a>
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__viewName">
-                <div class="footer__github">
-                    <img src="./img/GitHub.png" alt="GitHub Logo">
-                    <p class="footer__githubDescription">This Page</p>
-                    <a href="https://github.com/kznrluk/stacknroll" target="_blank"></a>
-                </div>
-            </div>
-        </footer>
-    </main>
+    </article>
+    <footer><a href="https://github.com/kznrluk/stacknroll">stack.anyfrog.net</a><p>2024 Kazunari Sasa</p></footer>
 </div>
 </body>
 </html>
