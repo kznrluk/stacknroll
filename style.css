@@ -1,8 +1,5 @@
 body {
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
 
